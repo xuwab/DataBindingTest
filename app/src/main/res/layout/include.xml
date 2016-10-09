@@ -3,7 +3,7 @@
     <data>
         <variable
             name="user"
-            type="com.xuwab.databindingtest.User"/>
+            type="android.databinding.ObservableMap"/>
     </data>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical" android:layout_width="match_parent"
@@ -15,6 +15,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{user.getName()}"/>
+            android:text="@{String.valueOf(user[`name`])}"/>
     </LinearLayout>
 </layout>
